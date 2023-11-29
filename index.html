@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script src="./js/script.js"></script>
+    <title>Penhaligons</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 배너 -->
+        <section class="banner">
+            <!-- 헤더 -->
+            <header class="header-area">
+
+                <a href="#none" class="header-logo">
+                    <svg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 152 24.67'><defs><style></style></defs><title>152x25_PenLogo_Mobile</title><path class='cls-1' d='M44.89,20.89h2.88v.41H45.34v1.36h2.17v.41H45.34v1.4H47.8v.41H44.89Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M49,24.3l.28-.33a1.92,1.92,0,0,0,1.37.56c.53,0,.88-.28.88-.68h0c0-.37-.19-.58-1-.76s-1.34-.49-1.34-1.15h0a1.18,1.18,0,0,1,1.31-1.09,2.09,2.09,0,0,1,1.4.49l-.26.35a1.76,1.76,0,0,0-1.15-.43c-.52,0-.85.28-.85.64h0c0,.38.2.59,1.08.78s1.3.52,1.3,1.13h0c0,.68-.57,1.12-1.36,1.12A2.37,2.37,0,0,1,49,24.3Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M54.45,21.31H53.12v-.42h3.13v.42H54.91v3.57h-.46Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M56.68,24.28h.53v.6h-.53Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M61.05,20.89h.45v3.57h2.24v.42H61.05Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M64.63,22.9v0a2,2,0,0,1,2-2.06,2,2,0,0,1,2,2.05h0a2,2,0,0,1-2,2.07A2,2,0,0,1,64.63,22.9Zm3.59,0v0a1.58,1.58,0,0,0-1.57-1.64,1.57,1.57,0,0,0-1.56,1.63h0a1.59,1.59,0,0,0,1.57,1.65A1.56,1.56,0,0,0,68.22,22.9Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M70.21,20.89h.42l2.51,3.2v-3.2h.44v4h-.36l-2.57-3.27v3.27h-.44Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M75.45,20.89h1.38a2,2,0,0,1,2.12,2h0a2,2,0,0,1-2.12,2H75.45Zm.45.42v3.15h.93a1.55,1.55,0,0,0,1.66-1.56v0a1.55,1.55,0,0,0-1.66-1.57Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M80.3,22.9v0a2,2,0,0,1,2-2.06,2,2,0,0,1,2,2.05h0a2,2,0,0,1-2,2.07A2,2,0,0,1,80.3,22.9Zm3.6,0v0a1.58,1.58,0,0,0-1.58-1.64,1.57,1.57,0,0,0-1.56,1.63h0a1.59,1.59,0,0,0,1.58,1.65A1.57,1.57,0,0,0,83.9,22.9Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M85.88,20.89h.42l2.52,3.2v-3.2h.43v4H88.9l-2.58-3.27v3.27h-.44Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M93.68,21.33l-.75.23-.11-.36,1-.34h.33v4h-.45Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M95.74,23.81h0a1.06,1.06,0,0,1,.82-1,1,1,0,0,1-.68-.92h0a1.4,1.4,0,0,1,2.72,0h0a1,1,0,0,1-.68.92,1.08,1.08,0,0,1,.82,1h0c0,.68-.65,1.13-1.5,1.13S95.74,24.47,95.74,23.81Zm2.54,0v0c0-.44-.46-.75-1-.75s-1,.31-1,.75v0c0,.39.38.74,1,.74S98.28,24.2,98.28,23.8Zm-.13-1.87h0c0-.4-.39-.69-.91-.69s-.91.29-.91.69h0a.93.93,0,0,0,1.82,0Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M102.12,21.3H99.93v-.41h2.71v.34l-1.81,3.65h-.51Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M103.75,22.9v0a1.71,1.71,0,1,1,3.36,0h0A1.86,1.86,0,0,1,105.43,25,1.84,1.84,0,0,1,103.75,22.9Zm2.9,0v0c0-.87-.48-1.65-1.22-1.65s-1.22.77-1.22,1.64h0c0,.88.48,1.66,1.23,1.66S106.65,23.77,106.65,22.9Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M8,7.43a13.56,13.56,0,0,1-4.24.44c0,1.5,0,2,0,2.75A3.38,3.38,0,0,0,4,12.25,2,2,0,0,0,5.68,13v.18H.07V13a2.32,2.32,0,0,0,1.47-.63,4.21,4.21,0,0,0,.28-1.92c0-.65,0-2.35,0-3.63V3.36a4.31,4.31,0,0,0-.3-2.12A2.67,2.67,0,0,0,0,.7V.53c.44,0,3.71,0,5,0a7.41,7.41,0,0,1,3.73.67,3.38,3.38,0,0,1,1.78,3A3.48,3.48,0,0,1,8,7.43ZM6.73,1.09A4.32,4.32,0,0,0,4.85.75,6.86,6.86,0,0,0,4,.82,4.25,4.25,0,0,0,3.8,2.17c0,1.63,0,5.1,0,5.45a7.88,7.88,0,0,0,2.52-.28A3.34,3.34,0,0,0,8.6,4.08,3.24,3.24,0,0,0,6.73,1.09Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M23.53,13.14H12.81V13a2.26,2.26,0,0,0,1.43-.66,4.23,4.23,0,0,0,.32-1.89c0-.65,0-2.35,0-3.63V3.36a4.45,4.45,0,0,0-.3-2.15A1.93,1.93,0,0,0,13,.7V.53h9.67l1.19,2.89-.18.08A8.67,8.67,0,0,0,21,1.12,9.4,9.4,0,0,0,17.92.77a8.61,8.61,0,0,0-1.33.09c0,.37-.09,1.65-.09,3.19,0,1.77,0,2.38,0,2.5a14,14,0,0,0,2.21-.14c1.42-.33,1.75-1.1,2-2.42H21V9.51h-.21a5,5,0,0,0-1-2,2.51,2.51,0,0,0-1.6-.59c-.7,0-.85,0-1.59,0,0,.32,0,1,0,1.7s0,1.63,0,2.09a4.13,4.13,0,0,0,.27,1.8c.21.32,1.12.46,2,.46a13.85,13.85,0,0,0,1.74-.11c1.47-.19,2.49-1,3.64-3l.2,0Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M38.91,1.79a10.91,10.91,0,0,0-.22,2.49c0,1-.09,2.41-.09,4,0,1.33,0,3.42,0,4.78a.19.19,0,0,1-.18.2.51.51,0,0,1-.31-.21c-4-4.57-6.33-7.47-9.5-11V9.39a8.12,8.12,0,0,0,.26,2.68c.27.53.79.77,1.74.89v.18H26.32V13a2,2,0,0,0,1.5-.77,6.3,6.3,0,0,0,.42-2.8c0-1,.07-2.42.07-4,0-1.33,0-1.64,0-3A1.84,1.84,0,0,0,26.44.7V.53H30l8.3,9.7V4.28a9.06,9.06,0,0,0-.17-2.35C37.9,1.28,37.34.86,36.22.7V.53h4.34V.7A1.81,1.81,0,0,0,38.91,1.79Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M51.37,13.14V13A2.38,2.38,0,0,0,53,12.32a5.87,5.87,0,0,0,.14-1.46c0-1.52,0-3.47,0-4H46.27v3.77a4,4,0,0,0,.18,1.65A1.91,1.91,0,0,0,47.8,13v.18H42.63V13a2.44,2.44,0,0,0,1.45-.64,4.89,4.89,0,0,0,.25-1.91c0-.65,0-2.35,0-3.63V3.36a4.37,4.37,0,0,0-.26-2A2.06,2.06,0,0,0,42.68.7V.53H47.9V.7c-.66.09-1.56.32-1.59,1.4-.05,1.63,0,4,0,4.45h6.92c0-1.5,0-2.33,0-3.85A3,3,0,0,0,53,1.42,1.7,1.7,0,0,0,51.44.7V.53h5.28V.7a1.82,1.82,0,0,0-1.42.77,5.89,5.89,0,0,0-.18,1.93v3c0,1.71,0,2.66,0,4.36a4,4,0,0,0,.16,1.52,1.83,1.83,0,0,0,1.45.68v.18Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M66.3,13.14V13c.16,0,1.23-.14,1.23-.8A23,23,0,0,0,66.27,8.3H61.61c-.35.88-.69,1.67-1,2.49a4.57,4.57,0,0,0-.37,1.33c0,.62.84.77,1.45.84v.18H57.93V13a2.27,2.27,0,0,0,1.19-.51,8.27,8.27,0,0,0,1.08-1.93c1-2.21,2.51-5.76,3.61-8.39l-.17-.38A3.56,3.56,0,0,0,65.18.28h.14C66.77,4.17,67.9,7.17,69,10.13a16.58,16.58,0,0,0,.73,1.71,2,2,0,0,0,1.69,1.09v.21ZM64,2.52c-.27.63-1.14,2.67-2.25,5.42h4.37C65.34,5.85,64.43,3.57,64,2.52Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M83.91,13.14H72.66V13a2.57,2.57,0,0,0,1.54-.66,4.18,4.18,0,0,0,.34-1.89c0-.65,0-2.35,0-3.63V3.38a4.17,4.17,0,0,0-.26-2A2.34,2.34,0,0,0,72.79.7V.53h5.58V.7c-.63.09-1.8.28-1.84,1.54,0,1.63,0,2.58,0,4.31s0,2.44,0,4a4.49,4.49,0,0,0,.23,1.82,3.76,3.76,0,0,0,2.13.48,11.74,11.74,0,0,0,2.56-.27c1.86-.5,2.38-1.73,3-3.13l.18,0Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M85.28,13.14V13a2.28,2.28,0,0,0,1.45-.68A4.26,4.26,0,0,0,87,10.41c0-.65,0-2.35,0-3.63V3.36a4.37,4.37,0,0,0-.26-2A2.08,2.08,0,0,0,85.33.7V.53h5.24V.7a1.78,1.78,0,0,0-1.44.75,4.4,4.4,0,0,0-.19,1.62c0,1.19,0,2.2,0,3.64v4a4,4,0,0,0,.18,1.65,2.24,2.24,0,0,0,1.49.64v.18Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M104.87,7.81a3.49,3.49,0,0,0-.16,1.41v2.55a10.68,10.68,0,0,1-5,1.49c-4.44,0-7.07-2.45-7.07-6.44a6.69,6.69,0,0,1,2-4.72,6.93,6.93,0,0,1,5-1.82,8.16,8.16,0,0,1,4.39,1.17,4,4,0,0,0,.58-.71h.16V4.56h-.21a6,6,0,0,0-1.4-2.65A4.66,4.66,0,0,0,99.82.58c-3.1,0-5,3-5,6.27,0,3.64,1.8,6.13,4.92,6.13a3.14,3.14,0,0,0,2.72-1.22,5.17,5.17,0,0,0,.28-2,2.84,2.84,0,0,0-.42-1.91,2,2,0,0,0-1.42-.54V7.13H106v.18A1.64,1.64,0,0,0,104.87,7.81Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M114.91,13.26a6.39,6.39,0,0,1-6.54-6.44c0-4,3.1-6.47,6.76-6.47a6.21,6.21,0,0,1,6.38,6.4A6.5,6.5,0,0,1,114.91,13.26Zm0-12.61c-3,0-4.38,3.21-4.38,6.22C110.54,10,112,13,115,13s4.36-3.27,4.36-6.2S117.9.65,114.92.65Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M135.37,1.79a10.76,10.76,0,0,0-.23,2.49c0,1-.08,2.41-.08,4,0,1.33,0,3.42,0,4.78a.18.18,0,0,1-.17.2.55.55,0,0,1-.32-.21c-4-4.57-6.32-7.47-9.49-11V9.39a7.85,7.85,0,0,0,.26,2.68c.26.53.79.77,1.73.89v.18h-4.31V13a2,2,0,0,0,1.51-.77,6.3,6.3,0,0,0,.42-2.8c0-1,.07-2.42.07-4,0-1.33,0-1.64,0-3A1.84,1.84,0,0,0,122.9.7V.53h3.55l8.31,9.7V4.28a8.57,8.57,0,0,0-.18-2.35c-.23-.65-.79-1.07-1.91-1.23V.53H137V.7A1.81,1.81,0,0,0,135.37,1.79Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M139.12,3.8V3.63c.83-.16,1.3-.49,1.3-1.23a1.21,1.21,0,0,0-.11-.51,1.19,1.19,0,0,1-.68.21.72.72,0,0,1-.72-.73A1,1,0,0,1,140,.47a1.37,1.37,0,0,1,1.35,1.42A2,2,0,0,1,139.12,3.8Z' transform='translate(0 -0.28)'/><path class='cls-1' d='M147.43,13.3a6.43,6.43,0,0,1-3.35-.79c-.07,0-.35.35-.54.61h-.16l0-3.48h.17a5.57,5.57,0,0,0,2.18,2.9,4.19,4.19,0,0,0,1.73.48,2.63,2.63,0,0,0,2.91-2.63c0-1.31-.9-1.89-2-2.31s-1.52-.51-2.57-.91A3.55,3.55,0,0,1,143.42,4c0-2.5,2-3.66,4.2-3.66a4.81,4.81,0,0,1,3,.84,2.21,2.21,0,0,0,.53-.63h.19V3.78h-.19c-.58-1.55-1.74-3.17-3.56-3.17A2.41,2.41,0,0,0,145,3.08c0,1.23.85,2,2,2.39.95.36,1.59.54,2.5.87A3.42,3.42,0,0,1,152,9.69C152,11.93,150.09,13.3,147.43,13.3Z' transform='translate(0 -0.28)'/></svg>
+                </a>
+
+                <div class="header-menu">
+                    <ul class="menu">
+                        <li data-alt="tab1">
+                            <a href="#none">Shop</a>
+                        </li> 
+                        <li data-alt="tab2">
+                            <a href="#none">Fragrances</a>
+                        </li>
+                        <li data-alt="tab3">
+                            <a href="#none">Skincare</a>
+                        </li>
+                        <li data-alt="tab4">
+                            <a href="#none">Body & Hair</a>
+                        </li>
+                        <li class="gifting">
+                            <a href="#none">Gifting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-right">
+                    <ul class="menu">
+                        <li><a href="#none">Search</a></li>
+                        <li><a href="#none">Cart</a></li>
+                        <li><a href="#none">Account</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 햄버거 -->
+                <a href="#none" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </header>
+            <!-- 서브메뉴박스 -->
+            <div class="sub-menu-box">
+                <ul id="tab1" class="sub-menu Shop">
+                    <li class="menu-left">
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                크리스마스 선물
+                                <li class="sub-menu-body">제품보기</li>
+                                <li class="sub-menu-body">남자 추천 상품</li>
+                                <li class="sub-menu-body">여성 추천 상품</li>
+                                <li class="sub-menu-body">선물세트</li>
+                            </ul>
+                        </a>
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                추천 상품
+                                <li class="sub-menu-body">블랙 프라이데이 인기 상품</li>
+                                <li class="sub-menu-body">신상품</li>
+                                <li class="sub-menu-body">베스트 셀러</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab1-1.jpg" alt="">
+                        </a>
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab1-2.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="tab2" class="sub-menu Fragrances">
+                    <li class="menu-left">
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                제품모두보기
+                                <li class="sub-menu-body">오드 퍼퓸</li>
+                                <li class="sub-menu-body">오드 코롱</li>
+                                <li class="sub-menu-body">아로마 워터</li>
+                                <li class="sub-menu-body">디스커버리 세트</li>
+                            </ul>
+                        </a>
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                향기
+                                <li class="sub-menu-body">감귤류</li>
+                                <li class="sub-menu-body">꽃</li>
+                                <li class="sub-menu-body">우디</li>
+                                <li class="sub-menu-body">머스키</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab2-1.jpg" alt="">
+                        </a>
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab2-2.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="tab3" class="sub-menu Skincare">
+                    <li class="menu-left">
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                제품모두보기
+                                <li class="sub-menu-body">이드라리아 라인</li>
+                                <li class="sub-menu-body">아쿠아 디 로즈 라인</li>
+                                <li class="sub-menu-body">보습제</li>
+                                <li class="sub-menu-body">클렌저 및 토너</li>
+                            </ul>
+                        </a>
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                피부타입
+                                <li class="sub-menu-body">영양</li>
+                                <li class="sub-menu-body">보습</li>
+                                <li class="sub-menu-body">클렌징</li>
+                                <li class="sub-menu-body">토닝</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab3-1.jpg" alt="">
+                        </a>
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab3-2.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="tab4" class="sub-menu Body">
+                    <li class="menu-left">
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                제품모두보기
+                                <li class="sub-menu-body">입욕제</li>
+                                <li class="sub-menu-body">스페셜 에디션</li>
+                                <li class="sub-menu-body">로션 및 토너</li>
+                                <li class="sub-menu-body">바디케어</li>
+                                <li class="sub-menu-body">키즈라인</li>
+                            </ul>
+                        </a>
+                        <a href="#none" class="sub-menu-detail">
+                            <ul class="sub-menu-head">
+                                헤어
+                                <li class="sub-menu-body">모두보기</li>
+                                <li class="sub-menu-body">샴푸</li>
+                                <li class="sub-menu-body">컨디셔너 </li>
+                                <li class="sub-menu-body">트리트먼트</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab4-1.jpg" alt="">
+                        </a>
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/tab4-2.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 배너 영상 스와이퍼 -->
+            <div class="swiper firstSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-1">
+                    <video src="./video/bannerv1.mp4" autoplay muted  playsinline></video>
+                  </div>
+                  <div class="swiper-slide slider-2">
+                    <video src="./video/bannerv2.mp4"autoplay muted  playsinline></video>
+                  </div>
+                  <div class="swiper-slide slider-3">
+                    <video src="./video/bannerv3.mp4" autoplay muted  playsinline></video>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <!-- sec-1 -->
+        <section class="sec-1">
+            <div class="container">
+                <h3 class="head-txt">신상품</h3>
+                <!-- sec-1 스와이퍼 -->
+                <div class="swiper secondSwiper">
+                    <div class="swiper-wrapper swiper2">
+                      <div class="swiper-slide slider-1">
+                        <img src="./img/sec1-1.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Luna</p>
+                                <p class="txt-right">루나 EDT 100ML</p>
+                            </div>
+                            <span>₩ 250,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-2">
+                        <img src="./img/sec1-2.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">The Favourite</p>
+                                <p class="txt-right">더 페이버릿 EDP 30ML</p>
+                            </div>
+                            <span>₩ 150,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-3">
+                        <img src="./img/sec1-3.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Solaris</p>
+                                <p class="txt-right">솔라리스 EDP 100ML</p>
+                            </div>
+                            <span>₩ 280,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-4">
+                        <img src="./img/sec1-4.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Endymion</p>
+                                <p class="txt-right">엔드미온 EDP 100ML</p>
+                            </div>
+                            <span>₩ 220,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-5">
+                        <img src="./img/sec1-5.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Rauquets</p>
+                                <p class="txt-right">라켓 EDP</p>
+                            </div>
+                            <span>₩ 130,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-6">
+                        <img src="./img/sec1-6.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Blazing Mister Sam</p>
+                                <p class="txt-right">블래이징 미스터 샘 75ML</p>
+                            </div>
+                            <span>₩ 370,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slider-7">
+                        <img src="./img/sec1-7.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Duchess Rose</p>
+                                <p class="txt-right">더치스 로즈 EDP 75ML 세트</p>
+                            </div>
+                            <span>₩ 390,000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- sec-2 -->
+        <section class="sec-2">
+            <div class="container">
+                <div class="content">
+                    <ul class="content-box1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="150">
+                        <li>
+                            <img src="./img/sec2-1.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ul class="content-box2">
+                        <li>
+                            <img src="./img/sec2-2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/sec2-3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/sec2-4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/sec2-5.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- sec-3 -->
+        <section class="sec-3">
+            <div class="container">
+                <div class="left">
+                    <h3 class="head-txt">타임세일</h3>
+                    <p>타임세일 상품을 만나보세요</p>
+                    <!-- 쌤한테 시간 질문 -->
+                    <div class="time">
+                        <div id="timer">Loading...</div>
+                        <!-- <div id="progress-bar-container">
+                            <div id="progress-bar"></div>
+                        </div> -->
+                    </div>
+                    
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+                <div class="right">
+                    <div class="swiper thirdSwiper">
+                        <div class="swiper-wrapper swiper3">
+                          <div class="swiper-slide slider-1">
+                            <img src="./img/sec3-1.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">SATORIAL</p>
+                                </div>
+                                <span>₩ 210,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-2">
+                            <img src="./img/sec3-2.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">Hammam bouquet</p>
+                                </div>
+                                <span>₩ 190,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-3">
+                            <img src="./img/sec3-3.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">Quercus</p>
+                                </div>
+                                <span>₩ 280,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-4">
+                            <img src="./img/sec3-4.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">Sports Car Club</p>
+                                </div>
+                                <span>₩ 230,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-5">
+                            <img src="./img/sec3-5.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">William Penhaligon</p>
+                                </div>
+                                <span>₩ 370,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-6">
+                            <img src="./img/sec3-6.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">Classic Collection Trio</p>
+                                </div>
+                                <span>₩ 110,000</span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-7">
+                            <img src="./img/sec3-7.jpg" alt="">
+                            <div class="txt-box">
+                                <div class="txt-t">
+                                    <p class="txt-left">Potions & Remedies</p>
+                                </div>
+                                <span>₩ 50,000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-4 -->
+        <section class="sec-4">
+            <div class="container">
+                <div class="title">
+                    <h3 class="head-txt">추천상품</h3>
+                    <ul class="btn-box">
+                        <li data-alt="tab8" class="btn active">
+                            <a href="#none">베스트</a>
+                        </li>
+                        <li data-alt="tab9" class="btn">
+                            <a href="#none">초특가</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--  -->
+                <div class="box best-box active" id="tab8">
+                    <div class="best-con-1 con">
+                        <img src="./img/price1.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Lily of The Valley</p>
+                                <p class="txt-right">릴리 오브 더 밸리</p>
+                            </div>
+                            <span>₩ 210,000</span>
+                        </div>
+                    </div>
+                    <div class="best-con-2 con">
+                        <img src="./img/price2.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Luna</p>
+                                <p class="txt-right">루나 EDT 30ML</p>
+                            </div>
+                            <span>₩ 110,000</span>
+                        </div>
+                    </div>
+                    <div class="best-con-3 con">
+                        <img src="./img/price3.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Lothair</p>
+                                <p class="txt-right">로테어 EDT 100ML</p>
+                            </div>
+                            <span>₩ 270,000</span>
+                        </div>
+                    </div>
+                    <div class="best-con-4 con">
+                        <img src="./img/price4.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Empressa</p>
+                                <p class="txt-right">엠프레사 EDP 100ML</p>
+                            </div>
+                            <span>₩ 370,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box price-box" id="tab9">
+                    <div class="price-con-1 con">
+                        <img src="./img/sec4-1.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Potions & Remedies</p>
+                                <p class="txt-right">포션&레메디</p>
+                            </div>
+                            <span>₩ 260,000</span>
+                        </div>
+                    </div>
+                    <div class="price-con-2 con">
+                        <img src="./img/sec4-2.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Luna & Cream</p>
+                                <p class="txt-right">루나 + 핸드크림 듀오 세트</p>
+                            </div>
+                            <span>₩ 180,000</span>
+                        </div>
+                    </div>
+                    <div class="price-con-3 con">
+                        <img src="./img/sec4-3.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Ladie`s Frahrance</p>
+                                <p class="txt-right">레이디스 미니어처</p>
+                            </div>
+                            <span>₩ 89,000</span>
+                        </div>
+                    </div>
+                    <div class="price-con-4 con">
+                        <img src="./img/sec4-4.jpg" alt="">
+                        <div class="txt-box">
+                            <div class="txt-t">
+                                <p class="txt-left">Juniper Sling</p>
+                                <p class="txt-right">쥬니퍼 슬링</p>
+                            </div>
+                            <span>₩ 270,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-5 -->
+        <section class="sec-5">
+            <div class="container">
+                <h3 class="head-txt">#선물샵</h3>
+                <div class="flex-box">
+                    <div class="left-box" data-aos="fade-right" data-aos-duration="500" data-aos-offset="200">
+                        <img src="./img/sec5left.jpg" alt="">
+                    </div>
+
+                    <div class="right-box">
+                        <h3 class="head-txt-right">선물추천</h3>
+                        <p class="head-txt-b">펜할리곤스의 인기상품을 선물해주세요</p>
+                        <div class="swiper fourSwiper">
+                            <div class="swiper-wrapper swiper4">
+                              <div class="swiper-slide slider-1">
+                                <img src="./img/sec5-1.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Artemisia</p>
+                                        <p class="txt-right">아르테메지아</p>
+                                    </div>
+                                    <span>₩ 280,000</span>
+                                </div>
+                              </div>
+                              <div class="swiper-slide slider-2">
+                                <img src="./img/sec5-2.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Elizabethan Rose</p>
+                                        <p class="txt-right">엘리자베 로즈</p>
+                                    </div>
+                                    <span>₩ 150,000</span>
+                                </div>
+                              </div>
+                              <div class="swiper-slide slider-3">
+                                <img src="./img/sec5-3.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Savoy Steam</p>
+                                        <p class="txt-right">사보이 스팀</p>
+                                    </div>
+                                    <span>₩ 270,000</span>
+                                </div>
+                              </div>
+                              <div class="swiper-slide slider-4">
+                                <img src="./img/sec5-4.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Eau The Audacity</p>
+                                        <p class="txt-right">오 디 오데시티</p>
+                                    </div>
+                                    <span>₩ 320,000</span>
+                                </div>
+                              </div>
+                              <div class="swiper-slide slider-5">
+                                <img src="./img/sec5-5.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Kiss of Bliss</p>
+                                        <p class="txt-right">키스 오브 블리스</p>
+                                    </div>
+                                    <span>₩ 320,000</span>
+                                </div>
+                              </div>
+                              <div class="swiper-slide slider-6">
+                                <img src="./img/sec5-6.jpg" alt="">
+                                <div class="txt-box">
+                                    <div class="txt-t">
+                                        <p class="txt-left">Maduro Candle</p>
+                                        <p class="txt-right">마두로 캔들</p>
+                                    </div>
+                                    <span>₩ 110,000</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+
+                </div>
+
+                
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-6 -->
+        <section class="sec-6">
+            <div class="container">
+                <h3 class="head-txt"># INSTAGRAM</h3>
+                <p class="sub-txt">@penhaligons.kr_offcial</p>
+                <div class="insta-container">
+                    <div class="con-box">
+                        <div class="con">
+                            <img src="./img/insta1.jpg" alt="">
+                        </div>
+                        <div class="con">
+                            <img src="./img/insta2.jpg" alt="">
+                        </div>
+                        <div class="con">
+                            <img src="./img/insta3.jpg" alt="">
+                        </div>
+                        <div class="con">
+                            <img src="./img/insta4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="#none">
+                        <img src="./img/logo1.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="footer-txt">
+                    <p>© 2023 Penhaligon's Ltd</p>
+                </div>
+                <div class="footer-icon">
+                    <ul class="footer-icons">
+                        <li>
+                            <a href="#none">
+                                <img src="./img/btn_in.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="./img/btn_yt.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="./img/btn_fb.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- 탑버튼 -->
+        <div class="top-btn">
+            <img src="./img/topbtn.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
