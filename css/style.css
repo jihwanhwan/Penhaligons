@@ -1108,7 +1108,7 @@ footer .footer-icons li{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:426px){
     .sec-1 .head-txt{
         margin-bottom: 16px;
     }
